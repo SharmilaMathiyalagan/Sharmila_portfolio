@@ -286,19 +286,9 @@ function initResumeDownload() {
     const resumeBtn = document.getElementById('resume-btn');
     
     if (resumeBtn) {
-        resumeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Simulate resume download
-            showNotification('Resume download started!', 'success');
-            
-            // In a real implementation, you would:
-            // window.open('path/to/resume.pdf', '_blank');
-            
-            // For demo purposes, we'll just show a message
-            setTimeout(() => {
-                showNotification('Resume download completed!', 'info');
-            }, 2000);
+        // Do not prevent default; let the browser handle the download attribute
+        resumeBtn.addEventListener('click', function() {
+            showNotification('Starting download...', 'success');
         });
     }
 }

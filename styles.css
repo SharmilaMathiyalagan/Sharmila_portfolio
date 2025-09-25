@@ -359,118 +359,28 @@ body {
 }
 
 /* Skills Section */
-.skills {
-  padding: 5rem 0;
-  background: var(--background);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.skill-category {
-  background: var(--card);
-  padding: 2rem;
-  border-radius: 1rem;
-  border: 1px solid var(--border);
-  transition: all 0.3s ease;
-}
-
-.skill-category:hover {
-  transform: translateY(-5px);
-  border-color: var(--primary);
-  box-shadow: var(--glow-primary);
-}
-
-.skill-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.skill-header i {
-  font-size: 1.5rem;
-  color: var(--primary);
-}
-
-.skill-header h3 {
-  font-size: 1.3rem;
-}
-
-.skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.skill-item {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem;
-  align-items: center;
-}
-
-.skill-bar {
-  grid-column: 1 / -1;
-  width: 100%;
-  height: 8px;
-  background: var(--muted);
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-primary);
-  border-radius: 4px;
-  width: 0;
-  transition: width 1s ease-in-out;
-  box-shadow: var(--glow-primary);
-}
-
-.skill-percent {
-  font-size: 0.9rem;
-  color: var(--muted-foreground);
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.additional-skills {
-  text-align: center;
-}
-
-.additional-skills h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.tech-tags {
+.skill-tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.tech-tag {
-  background: var(--muted);
-  color: var(--muted-foreground);
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
+.skill-badge {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
-  cursor: default;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.tech-tag:hover {
-  background: var(--primary);
-  color: var(--primary-foreground);
-  transform: scale(1.05);
+.skill-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 
 /* Projects Section */
 .projects {
@@ -714,6 +624,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  
 }
 
 .contact-item i {
